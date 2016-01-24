@@ -1,0 +1,35 @@
+{
+  "name": "eslint-code-review",
+  "version": "0.0.1",
+  "description": "Useful for writing unit tests with ESLint",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run babelify && ava test/**/*.js",
+    "prebabelify": "rimraf lib",
+    "babelify": "babel src --out-dir lib",
+    "prepublish": "npm run babelify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jonathanKingston/eslint-code-review.git"
+  },
+  "keywords": [
+    "ESLint",
+    "code-review"
+  ],
+  "author": "Jonathan Kingston",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonathanKingston/eslint-code-review/issues"
+  },
+  "homepage": "https://github.com/jonathanKingston/eslint-code-review#readme",
+  "dependencies": {
+    "eslint": "^1.10.3"
+  },
+  "devDependencies": {
+    "ava": "^0.11.0",
+    "babel-cli": "^6.4.5",
+    "rimraf": "^2.5.1",
+    "babel-preset-es2015": "^6.3.13"
+  }
+}
