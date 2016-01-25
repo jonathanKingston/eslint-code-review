@@ -23,16 +23,13 @@ export default class ESLintCodeReview {
   }
 
   unindent(code) {
-    let outputCode = code.replace(/^\n/, '').replace(/\n$/, '');
+    let outputCode = code.replace(/^\n/, '').replace(/\n[ \t]*$/, '');
     let matchInitialSpaces = outputCode.match(/^(\s+)/);
   
     if (matchInitialSpaces) {
       let spaceMatch = new RegExp('^' + matchInitialSpaces[1]);
       let lines = outputCode.split('\n');
       outputCode = lines.map((line, count) => {
-        if (count === lines.length - 1) {
-          return line.trim();
-        }
         return line.replace(spaceMatch, '');
       });
     }

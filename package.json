@@ -1,6 +1,6 @@
 {
   "name": "eslint-code-review",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Useful for writing unit tests with ESLint",
   "main": "lib/index.js",
   "scripts": {
