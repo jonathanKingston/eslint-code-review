@@ -1,6 +1,6 @@
 import { linter } from 'eslint';
 
-export default class CodeChecker {
+export default class ESLintCodeReview {
 
   constructor(code, config) {
     this.config = config;
