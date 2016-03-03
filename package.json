@@ -1,6 +1,6 @@
 {
   "name": "eslint-code-review",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Useful for writing unit tests with ESLint",
   "main": "lib/index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/jonathanKingston/eslint-code-review#readme",
   "dependencies": {
-    "eslint": "^1.10.3"
+    "eslint": "^2.2.0"
   },
   "devDependencies": {
     "ava": "^0.11.0",
